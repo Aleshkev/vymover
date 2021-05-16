@@ -1,0 +1,27 @@
+{% for paragraph in paragraphs %}
+    <div class="paragraph">
+        {% for spelling, pronunciation in paragraph %}
+            <div class="unit">
+                <div class="spelling">
+                    {% for word in spelling %}
+                        {# cambridge is the better dictionary cause it has /dj/ as /dʒ/ #}
+                        {# which is sth that can't be said about espeak but what can i do #}
+                        {# btw, yes, this is the perfect place to compare dictionaries #}
+                        <a href="https://dictionary.cambridge.org/dictionary/english/{{ word }}" target="_blank">
+                            {{ word | replace(" ", "&nbsp;") | safe }}
+                        </a>
+                    {% endfor %}
+                </div>
+                <div class="pronunciation">{{ pronunciation | safe }}</div>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+
+{# do not autoformat this file plz #}
+{# this last endfor can't be indented bc we want exactly one newline and nothing more #}
+<div id="copy" style="display: none;">
+    {%- for paragraph in paragraphs -%}
+        {%- for _, pronunciation in paragraph %}{{ pronunciation }}{% endfor %}
+{% endfor -%}
+</div>

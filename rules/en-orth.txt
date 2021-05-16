@@ -1,0 +1,31 @@
+INCLUDE en-sbe
+
+ɪː ir
+ɛː er
+oː or
+əː yr
+ɑː ar
+
+ɪj ij
+ɛj ej
+oj oj
+ɑj aj
+
+aw aw
+ʉw uw
+əw yw
+ɪj ij
+
+ɪ i
+ɛ e
+ɔ o
+ʌ y
+ɵ u
+ð vv
+θ ff
+ə '
+ɡ g
+tʃ tj
+dʒ dj
+ŋ ng
+ʃ ss
